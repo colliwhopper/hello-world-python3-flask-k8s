@@ -1,5 +1,6 @@
 
 # general info
+<hr/>
 
 This is a python based "k8s-test-app" app, running in flask.
 
@@ -10,11 +11,11 @@ local host admin access
 **docker scout v1.9.3 quickview results (11/06/24)**  
 ```Target │  local://k8s-test-app:1.1  │     0C     1H     0M    38L```
 
-
 **docker image size**  
 approx 160Mb  
 
-# usage 
+# usage
+<hr/>
 
 ### local build and testing - docker
 
@@ -88,10 +89,13 @@ develop and test a new image in docker then, using "new" image "k8s-test-app:1.1
 ```kubectl set image deployment/k8s-test-app k8s-test-app=k8s-test-app:1.1```  
 ```kubectl get all``` - to monitor rollout
 
-# cleanup 
+**minikube cleanup** \
 ```kubectl delete service k8s-test-app```  
 ```kubectl delete deployment k8s-test-app``` \
 ``kubectl get all``
 
 ```minikube stop --all```  
 ```minikube status``` - to check minikube has stopped 
+
+### remote deployment - dockerhub
+```docker pull gabrielit/k8s-test-app:1.1```
