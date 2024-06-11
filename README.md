@@ -8,7 +8,7 @@ working local installation of minikube
 local host admin access  
 
 **docker scout v1.9.3 quickview results (11/06/24)**  
-```Target │  local://k8s-test-app:1.1  │    0C     1H     1M    46L```
+```Target │  local://k8s-test-app:1.1  │     0C     1H     0M    38L```
 
 
 **docker image size**  
