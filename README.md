@@ -1,7 +1,7 @@
 
 # general info
 
-This is a python based "hello-world" app, running in flask.
+This is a python based "eks-test-app" app, running in flask.
 
  **prereqs**  
 working local installation of minikube   
@@ -23,7 +23,7 @@ approx 154Mb
 ### local build and testing - docker
 
 **build**  
-```docker build -t hello-world:1.0 .```  
+```docker build -t eks-test-app:1.1 .```  
 </br>
 
 **check image**  
@@ -31,7 +31,7 @@ approx 154Mb
 </br>
 
 **test locally in docker**  
-```docker run -d --rm -p 8080:8080 hello-world:1.0```  
+```docker run -d --rm -p 8080:8080 eks-test-app:1.1```  
 ```docker ps -a```    
 ```curl -i -w '\n' http://localhost:8080```  
 </br>

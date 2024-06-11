@@ -1,5 +1,5 @@
 # offical slim (debian) python3 image
-FROM python:3.9.14-slim-bullseye
+FROM python:3.12.4-slim-bullseye
 
 # update
 ARG DEBIAN_FRONTEND=noninteractive

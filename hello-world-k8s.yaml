@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: hello-world:1.0
-          imagePullPolicy: Never
+          image: hello-world:1.1
+          imagePullPolicy: Always
           securityContext:
             runAsUser: 1001
             runAsNonRoot: true
