@@ -3,7 +3,8 @@ FROM python:3.12.4-slim-bullseye
 
 # update
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install --assume-yes apt-utils curl
+RUN apt-get update
+RUN apt-get upgrade -y
 
 # clean apt cache
 RUN rm -rf /var/cache/apt/*
@@ -12,8 +13,8 @@ RUN rm -rf /var/cache/apt/*
 RUN rm -rf /etc/localtime && ln -fs /usr/share/zoneinfo/GMT /etc/localtime && date +%Z
 
 # create user to aid in securing app
-ARG user=helloworld_svc
-ARG group=helloworld
+ARG user=k8s_test_app_svc
+ARG group=k8s_test_app
 ARG uid=1001
 ARG gid=1001
 
